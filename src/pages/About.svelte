@@ -1,7 +1,8 @@
 <script lang="ts">
+    import { fly } from 'svelte/transition'
 </script>
 
-<section class="about container">
+<section class="about container" in:fly={{ x: 300, duration: 500 }}>
     <p class="bodyFont">
         <span class="pTag">
             <span class="codeBlue">&lt;</span><span class="codeRed">p</span><span class="codeBlue">&gt;</span>
@@ -23,7 +24,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        align-self: center;
+        margin-top: 3em;
     }
     .bodyFont {
         max-width: 480px;
