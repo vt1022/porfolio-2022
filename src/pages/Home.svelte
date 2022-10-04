@@ -11,20 +11,17 @@
     <ul class="contactList bodyFont">
         <li class="contact">
             <span class="codePurple">const</span> <span class="codeRed">email</span> <span class="codePurple">=</span>
-            <a class="codeGreen" target="_blank" rel="noopener" href="mailto:vinccimantsui@gmail.com" aria-label="email me">
+            <a target="_blank" rel="noopener" href="mailto:vinccimantsui@gmail.com" aria-label="email me">
                 vinccimantsui@gmail.com
             </a>
         </li>
         <li class="contact">
             <span class="codePurple">const</span> <span class="codeRed">github</span> <span class="codePurple">=</span>
-            <a class="codeGreen" target="_blank" rel="noopener" href="https://github.com/vt1022" aria-label="go to my github">
-                /vt1022
-            </a>
+            <a target="_blank" rel="noopener" href="https://github.com/vt1022" aria-label="go to my github"> /vt1022 </a>
         </li>
         <li class="contact">
             <span class="codePurple">const</span> <span class="codeRed">linkedin</span> <span class="codePurple">=</span>
             <a
-                class="codeGreen"
                 target="_blank"
                 rel="noopener"
                 href="https://www.linkedin.com/in/vincci-tsui-040a031a3/"
@@ -35,12 +32,7 @@
         </li>
         <li class="contact">
             <span class="codePurple">const</span> <span class="codeRed">resume</span> <span class="codePurple">=</span>
-            <a
-                class="codeGreen"
-                href="assets/resume-vincci-tsui-2022-b.pdf"
-                download="resume-vincci-tsui"
-                aria-label="download resume"
-            >
+            <a href="assets/resume-vincci-tsui-2022-b.pdf" download="resume-vincci-tsui" aria-label="download resume">
                 download pdf
             </a>
         </li>

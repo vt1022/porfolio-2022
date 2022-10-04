@@ -43,12 +43,14 @@
         background-color: var(--bg);
     }
     main :global(a) {
-        text-decoration: underline;
+        color: var(--bodyFont);
+        text-decoration: none;
         transition: all 0.2s ease-in;
+        border-bottom: 1px solid var(--primary);
     }
     main :global(a:hover) {
-        color: var(--bodyFont);
-        text-decoration: underline;
+        color: var(--primary);
+        border-bottom: 1px solid var(--secondary);
     }
     main :global(.primary) {
         color: var(--primary);

@@ -5,9 +5,9 @@ const theme = {
     bg: '#222',
     offBg: '#313131',
     bodyFont: '#eee',
-    codePurple: '#bf80ff',
+    codePurple: '#8574CB',
     codeRed: '#ff6133',
-    codeGreen: '#9df274',
+    codeGreen: '#acde61',
     codeBlue: '#33ccff',
     codeOrange: '#ffcc00'
     // codePurple: '#8574CB',

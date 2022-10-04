@@ -15,7 +15,7 @@
             <ul class="navList">
                 <HeaderNavLink innerHtml="Home.js" toPage={0} {activePage} on:pageChange />
                 <HeaderNavLink innerHtml="MyWork.js" toPage={1} {activePage} on:pageChange />
-                <HeaderNavLink innerHtml="AboutMe.js" toPage={2} {activePage} on:pageChange />
+                <HeaderNavLink innerHtml="AboutMe.html" toPage={2} {activePage} on:pageChange />
             </ul>
         {:else}
             <!-- skip link -->
@@ -32,7 +32,7 @@
             <ul class="nav__links">
                 <HeaderNavLink innerHtml="Home.js" toPage={0} {activePage} on:pageChange />
                 <HeaderNavLink innerHtml="MyWork.js" toPage={1} {activePage} on:pageChange />
-                <HeaderNavLink innerHtml="AboutMe.js" toPage={2} {activePage} on:pageChange />
+                <HeaderNavLink innerHtml="AboutMe.html" toPage={2} {activePage} on:pageChange />
             </ul>
         {/if}
     </nav>
@@ -42,6 +42,7 @@
     .navList {
         display: flex;
         margin: 0;
+        border-bottom: 2px solid var(--offBg);
     }
 
     /* hamburger starts */

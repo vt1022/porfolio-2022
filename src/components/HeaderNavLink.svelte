@@ -16,7 +16,7 @@
     .navLink {
         margin: 0;
         padding: 0 0.5em;
-        border-bottom: 1px none var(--primary);
+        border-bottom: 1px solid transparent;
         background-color: var(--offBg);
         font-size: 1.2rem;
         cursor: pointer;
@@ -27,6 +27,10 @@
         color: var(--bodyFont);
         opacity: 0;
         transition: all 0.3s ease-in;
+    }
+    .navLink:hover {
+        color: var(--bodyFont);
+        border-bottom: 1px solid var(--primary);
     }
     .navLink:hover::after {
         opacity: 1;

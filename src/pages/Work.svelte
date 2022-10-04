@@ -10,18 +10,12 @@
             <ObjectDeclaration name="myPortfolio" />
             <p class="insideObj codeGreen">
                 liveSite<span class="codeBlue">:</span>
-                <a class="primary" target="_blank" rel="noopener" href="https://vinccitsui.me" aria-label="my portfolio">
-                    vinccitsui.me</a
-                ><span class="codeBlue">,</span>
+                <a target="_blank" rel="noopener" href="https://vinccitsui.me" aria-label="my portfolio"> vinccitsui.me</a><span
+                    class="codeBlue">,</span
+                >
                 <br />
                 code<span class="codeBlue">:</span>
-                <a
-                    class="primary"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://github.com/vt1022/portfolio-2022"
-                    aria-label="my portfolio"
-                >
+                <a target="_blank" rel="noopener" href="https://github.com/vt1022/portfolio-2022" aria-label="my portfolio">
                     github/portfolio</a
                 ><span class="codeBlue">,</span>
                 <ObjectLine
@@ -37,7 +31,7 @@
             <ObjectDeclaration name="chePatisserie" />
             <p class="insideObj codeGreen">
                 liveSite<span class="codeBlue">:</span>
-                <a class="primary" target="_blank" rel="noopener" href="https://chepatisserie.com" aria-label="che patisserie">
+                <a target="_blank" rel="noopener" href="https://chepatisserie.com" aria-label="che patisserie">
                     chepatisserie.com</a
                 ><span class="codeBlue">,</span>
                 <ObjectLine key="code" value="available upon request" />
@@ -54,24 +48,12 @@
             <ObjectDeclaration name="pokéMatch" />
             <p class="insideObj codeGreen">
                 liveSite<span class="codeBlue">:</span>
-                <a
-                    class="primary"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://vt1022.github.io/pokematch/"
-                    aria-label="pokématch"
-                >
+                <a target="_blank" rel="noopener" href="https://vt1022.github.io/pokematch/" aria-label="pokématch">
                     gh-pages.pokematch</a
                 ><span class="codeBlue">,</span>
                 <br />
                 code<span class="codeBlue">:</span>
-                <a
-                    class="primary"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://github.com/vt1022/pokematch"
-                    aria-label="pokématch code repo"
-                >
+                <a target="_blank" rel="noopener" href="https://github.com/vt1022/pokematch" aria-label="pokématch code repo">
                     github/pokematch</a
                 ><span class="codeBlue">,</span>
                 <ObjectLine
@@ -86,19 +68,12 @@
             <ObjectDeclaration name="divCraft" />
             <p class="insideObj codeGreen">
                 liveSite<span class="codeBlue">:</span>
-                <a
-                    class="primary"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://vt1022.github.io/characterSelection/"
-                    aria-label="div craft"
-                >
+                <a target="_blank" rel="noopener" href="https://vt1022.github.io/characterSelection/" aria-label="div craft">
                     gh-pages.divcraft</a
                 ><span class="codeBlue">,</span>
                 <br />
                 code<span class="codeBlue">:</span>
                 <a
-                    class="primary"
                     target="_blank"
                     rel="noopener"
                     href="https://github.com/vt1022/characterSelection"
