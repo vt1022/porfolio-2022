@@ -89,9 +89,11 @@
     }
 
     .contactList {
+        display: grid;
+        grid-gap: .7em;
         margin: 0 auto;
         font-family: 'Courier New', Courier, monospace;
         font-weight: 400;
-        line-height: 1.4;
+        line-height: 1.2;
     }
 </style>

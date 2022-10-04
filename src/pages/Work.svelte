@@ -7,9 +7,9 @@
 <section class="work container" in:fly={{ x: 300, duration: 500 }}>
     <ul class="workList bodyFont">
         <li class="work">
-            <ObjectDeclaration name="myPortfolio" />
+            <ObjectDeclaration name="my_portfolio" />
             <p class="insideObj codeGreen">
-                liveSite<span class="codeBlue">:</span>
+                live<span class="codeBlue">:</span>
                 <a target="_blank" rel="noopener" href="https://vinccitsui.me" aria-label="my portfolio"> vinccitsui.me</a><span
                     class="codeBlue">,</span
                 >
@@ -28,9 +28,9 @@
             <span class="codeOrange">&#125;</span>
         </li>
         <li class="work">
-            <ObjectDeclaration name="chePatisserie" />
+            <ObjectDeclaration name="che_patisserie" />
             <p class="insideObj codeGreen">
-                liveSite<span class="codeBlue">:</span>
+                live<span class="codeBlue">:</span>
                 <a target="_blank" rel="noopener" href="https://chepatisserie.com" aria-label="che patisserie">
                     chepatisserie.com</a
                 ><span class="codeBlue">,</span>
@@ -45,9 +45,9 @@
             <span class="codeOrange">&#125;</span>
         </li>
         <li class="work">
-            <ObjectDeclaration name="pokéMatch" />
+            <ObjectDeclaration name="poké_match" />
             <p class="insideObj codeGreen">
-                liveSite<span class="codeBlue">:</span>
+                live<span class="codeBlue">:</span>
                 <a target="_blank" rel="noopener" href="https://vt1022.github.io/pokematch/" aria-label="pokématch">
                     gh-pages.pokematch</a
                 ><span class="codeBlue">,</span>
@@ -65,9 +65,9 @@
             <span class="codeOrange">&#125;</span>
         </li>
         <li class="work">
-            <ObjectDeclaration name="divCraft" />
+            <ObjectDeclaration name="div_craft" />
             <p class="insideObj codeGreen">
-                liveSite<span class="codeBlue">:</span>
+                live<span class="codeBlue">:</span>
                 <a target="_blank" rel="noopener" href="https://vt1022.github.io/characterSelection/" aria-label="div craft">
                     gh-pages.divcraft</a
                 ><span class="codeBlue">,</span>
@@ -102,6 +102,10 @@
         line-height: 1.2;
         overflow: scroll;
         scrollbar-width: none;
+    }
+    .workList {
+        display: grid;
+        grid-gap: 1em;
     }
     .insideObj {
         margin: 0;
