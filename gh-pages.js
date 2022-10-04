@@ -1,7 +1,7 @@
 const ghpages = require('gh-pages')
 
 ghpages.publish(
-    'build', // path to public directory
+    'public', // path to public directory
     {
         branch: 'gh-pages',
         repo: 'https://github.com/vt1022/portfolio-2022.git', // Update to point to your repository
