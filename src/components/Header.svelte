@@ -9,8 +9,8 @@
 
 <svelte:window bind:innerWidth />
 
-<header class="header">
-    <nav class="nav">
+<header class={`header ${desktopMode ? 'header--desktop' : 'header--mobile'}`}>
+    <nav class={`nav ${desktopMode ? 'nav--desktop' : 'nav--mobile'}`}>
         {#if desktopMode}
             <ul class="navList">
                 <HeaderNavLink innerHtml="Home.js" toPage={0} {activePage} on:pageChange />
@@ -39,10 +39,21 @@
 </header>
 
 <style>
+    .header--desktop {
+        display: flex;
+        border-bottom: 2px solid var(--offBg);
+    }
+    .header {
+        overflow: hidden;
+    }
+    .nav {
+        margin: 0 auto;
+        width: 700px;
+        max-width: 98vw;
+    }
     .navList {
         display: flex;
         margin: 0;
-        border-bottom: 2px solid var(--offBg);
     }
 
     /* hamburger starts */
@@ -51,26 +62,27 @@
     }
     .nav__toggle-label {
         position: relative;
-        top: 0px;
-        z-index: 12;
+        top: 0;
+        z-index: 4;
         transition: 0.5s;
     }
     .nav__links {
-        position: fixed;
-        left: 0;
-        top: -150%;
-        width: 100%;
+        position: relative;
+        left: 40px;
+        top: -550px;
         height: 0;
-        padding-bottom: .5em;
+        margin: 0;
+        padding-bottom: 0.5em;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         transition: all 0.5s ease-in-out;
+        overflow: hidden;
     }
     .nav__toggle-input:checked ~ .nav__links {
-        z-index: 2;
-        top: 0;
-        height: 120px;
+        z-index: 11111111;
+        top: -30px;
+        height: 90px;
 
         background: var(--bg);
     }
@@ -79,7 +91,7 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        z-index: 10;
+        z-index: 6;
         height: 25px;
         width: 50px;
         max-width: 120px;
@@ -106,15 +118,15 @@
     }
     /* hamburger animation starts */
     .nav__toggle-input:checked + label > .hamburger > .line1 {
-        width: 50px;
-        transform: translateY(20px) rotate(405deg);
+        width: 30px;
+        transform: translateY(10px) rotate(405deg);
     }
     .nav__toggle-input:checked + label > .hamburger > .line2 {
         opacity: 0;
     }
     .nav__toggle-input:checked + label > .hamburger > .line3 {
-        width: 50px;
-        transform: translateY(-4px) rotate(-405deg);
+        width: 30px;
+        transform: translateY(-14px) rotate(-405deg);
     }
     .nav .hamburger:hover,
     .nav .hamburger:focus {

@@ -36,7 +36,7 @@
 <style>
     main {
         display: grid;
-        grid-template-rows: 40px;
+        grid-template-rows: min-content;
 
         height: 100%;
         padding: 8px;
