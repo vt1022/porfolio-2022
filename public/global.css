@@ -12,12 +12,24 @@ html {
 }
 /**** borbox ****/
 
+/**** accessibility ****/
+.skip-link {position: absolute; left: -1000px; top: 5px; z-index: 999; background: white; color: black;}
+
+.skip-link:focus {left: 0;}
+* {
+    scrollbar-width: none;
+}
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+/**** accessibility ****/
+
 html,
 body {
     position: relative;
     width: 100%;
     height: 100%;
 }
+
 body {
     color: #333;
     margin: 0;
@@ -62,21 +74,14 @@ input:disabled {
 }
 
 button {
-    color: #333;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     outline: none;
-}
-
-button:disabled {
-    color: #999;
-}
-
-button:not(:disabled):active {
-    background-color: #ddd;
+    background-color: transparent;
 }
 
 button:focus {
-    border-color: #666;
+    border: none;
 }
 
 ul {
@@ -86,4 +91,3 @@ ul {
 li {
     list-style: none;
 }
-

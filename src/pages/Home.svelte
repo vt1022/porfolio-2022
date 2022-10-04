@@ -1,7 +1,8 @@
 <script lang="ts">
+    import { fly } from 'svelte/transition'
 </script>
 
-<section class="home container">
+<section class="home container" in:fly={{ x: 300, duration: 500 }}>
     <div class="greetingContainer">
         <p class="greeting">hey, i'm</p>
         <h2 class="name">vincci <span class="name name--last">tsui</span></h2>

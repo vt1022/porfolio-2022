@@ -1,9 +1,10 @@
 <script>
+    import { fly } from 'svelte/transition'
     import ObjectDeclaration from '../components/ObjectDeclaration.svelte'
     import ObjectLine from '../components/ObjectLine.svelte'
 </script>
 
-<section class="work container">
+<section class="work container" in:fly={{ x: 300, duration: 500 }}>
     <ul class="workList bodyFont">
         <li class="work">
             <ObjectDeclaration name="myPortfolio" />

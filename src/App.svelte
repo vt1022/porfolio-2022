@@ -3,37 +3,25 @@
     import Home from './pages/Home.svelte'
     import About from './pages/About.svelte'
     import Work from './pages/Work.svelte'
-
-    const theme: object = {
-        primary: '#55ccc0',
-        secondary: '#8574CB',
-        softBlack: '#252525',
-        bg: '#222',
-        offBg: '#313131',
-        bodyFont: '#eee',
-        codePurple: '#bf80ff',
-        codeRed: '#ff6133',
-        codeGreen: '#9df274',
-        codeBlue: '#33ccff',
-        codeOrange: '#ffcc00'
-        // codePurple: '#8574CB',
-        // codeRed: '#8E3543',
-        // codeGreen: '#7E9D6F',
-    }
-    $: cssVarColours = Object.entries(theme)
-        .map(([key, value]) => `--${key}:${value}`)
-        .join(';')
+    import theme from './data/theme.js'
 
     enum Pages {
         home,
         work,
         about
     }
+
+    $: themeObject = Object.entries(theme)
+        .map(([key, value]) => `--${key}:${value}`)
+        .join(';')
+
     $: activePage = Pages.home
     const changePage = (e: CustomEvent) => (activePage = e.detail)
+
+    console.log(`Thanks for looking ¯\\(°‿o)/¯`)
 </script>
 
-<main style={cssVarColours}>
+<main style={themeObject}>
     <Header {activePage} on:pageChange={changePage} />
 
     {#if activePage === Pages.about}
