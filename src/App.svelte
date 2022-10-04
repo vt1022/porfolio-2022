@@ -11,7 +11,10 @@
         about
     }
 
-    $: themeObject = Object.entries(theme)
+    $: isDarkTheme = true
+    const changeTheme = (e: CustomEvent) => (isDarkTheme = !e.detail)
+
+    $: themeCssVars = Object.entries(isDarkTheme ? theme.dark : theme.light)
         .map(([key, value]) => `--${key}:${value}`)
         .join(';')
 
@@ -21,8 +24,8 @@
     console.log(`Thanks for looking ¯\\(°‿o)/¯`)
 </script>
 
-<main style={themeObject}>
-    <Header {activePage} on:pageChange={changePage} />
+<main style={themeCssVars}>
+    <Header {activePage} {isDarkTheme} on:pageChange={changePage} on:themeChange={changeTheme} />
 
     {#if activePage === Pages.about}
         <About />
@@ -37,10 +40,10 @@
     main {
         display: grid;
         grid-template-rows: min-content;
-
         height: 100%;
         padding: 8px;
         background-color: var(--bg);
+        transition: all 0.2s ease-in;
     }
     main :global(a) {
         color: var(--bodyFont);

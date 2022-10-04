@@ -17,7 +17,7 @@
         margin: 0;
         padding: 0 0.5em;
         border-bottom: 1px solid transparent;
-        background-color: var(--offBg);
+        background-color: var(--bg);
         font-size: 1.2rem;
         cursor: pointer;
         transition: all 0.3s ease-in;
@@ -37,7 +37,7 @@
     }
     .navLink.active {
         border-bottom: 1px solid var(--secondary);
-        background-color: var(--bg);
+        background-color: var(--offBg);
     }
     .navLink.active::after {
         opacity: 1;

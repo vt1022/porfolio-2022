@@ -1,10 +1,12 @@
 <script lang="ts">
     import HeaderNavLink from './HeaderNavLink.svelte'
+    import ThemeToggle from './ThemeToggle.svelte'
 
     export let activePage: number
+    export let isDarkTheme: boolean
 
     let innerWidth: number = 0
-    $: desktopMode = innerWidth > 370
+    $: desktopMode = innerWidth > 399
 </script>
 
 <svelte:window bind:innerWidth />
@@ -35,21 +37,28 @@
                 <HeaderNavLink innerHtml="AboutMe.html" toPage={2} {activePage} on:pageChange />
             </ul>
         {/if}
+        <ThemeToggle {isDarkTheme} {desktopMode} on:themeChange />
     </nav>
 </header>
 
 <style>
+    .header {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
     .header--desktop {
         display: flex;
         border-bottom: 2px solid var(--offBg);
-    }
-    .header {
-        overflow: hidden;
     }
     .nav {
         margin: 0 auto;
         width: 700px;
         max-width: 98vw;
+    }
+    .nav--desktop {
+        display: flex;
+        justify-content: space-between;
     }
     .navList {
         display: flex;
@@ -80,7 +89,7 @@
         overflow: hidden;
     }
     .nav__toggle-input:checked ~ .nav__links {
-        z-index: 11111111;
+        z-index: 9;
         top: -30px;
         height: 90px;
 
