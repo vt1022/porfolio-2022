@@ -21,14 +21,14 @@ const theme = {
         secondary: '#55ccc0',
         softBlack: '#252525',
         mediumGrey: '#888',
-        bg: '#ddd',
+        bg: '#fff',
         offBg: '#ccc',
         bodyFont: '#212121',
         codePurple: '#7258e0',
-        codeRed: '#961f17',
-        codeGreen: '#3f8700',
-        codeBlue: '#029acc',
-        codeOrange: '#ffcc00'
+        codeRed: '#AD0000',
+        codeGreen: '#2E5C00',
+        codeBlue: '#025F7E',
+        codeOrange: '#AD5700'
     }
 }
 export default theme
