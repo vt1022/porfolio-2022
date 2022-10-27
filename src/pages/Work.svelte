@@ -31,10 +31,24 @@
             <ObjectDeclaration name="che_patisserie" />
             <p class="insideObj codeGreen">
                 live<span class="codeBlue">:</span>
-                <a target="_blank" rel="noopener" href="https://chepatisserie.com" aria-label="che patisserie">
-                    chepatisserie.com</a
+                <a
+                    target="_blank"
+                    rel="noopener"
+                    href="https://vt1022.github.io/che-patisserie-demo/"
+                    aria-label="che patisserie"
+                >
+                    chepatisserie.demo</a
                 ><span class="codeBlue">,</span>
-                <ObjectLine key="code" value="available upon request" />
+                <br />
+                code<span class="codeBlue">:</span>
+                <a
+                    target="_blank"
+                    rel="noopener"
+                    href="https://github.com/vt1022/che-patisserie-demo"
+                    aria-label="che patisserie"
+                >
+                    github/chepatisserie</a
+                ><span class="codeBlue">,</span>
                 <ObjectLine
                     key="description"
                     value="Mobile-first e-Commerce website for a home baker client built with React. Integration with Google Sheets for
