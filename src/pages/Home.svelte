@@ -30,12 +30,12 @@
                 /vinccimantsui
             </a>
         </li>
-        <li class="contact">
+        <!-- <li class="contact">
             <span class="codePurple">const</span> <span class="codeRed">resume</span> <span class="codePurple">=</span>
             <a href="assets/resume-vincci-tsui-2022-b.pdf" download="resume-vincci-tsui" aria-label="download resume">
                 download pdf
             </a>
-        </li>
+        </li> -->
     </ul>
 </section>
 
